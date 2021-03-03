@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root "welcome#index"
+
   get "/restaurants/:search_term", to: "restaurants#get_by_search_term"
   get "/restaurants", to: "restaurants#index"
   
